@@ -23,3 +23,14 @@ class Input:
 
         f.close()
         return lines
+
+    def linesTest(do_strip=False):
+        f = open('test' + '.txt', 'r')
+        lines = f.readlines()
+
+        if do_strip:
+            lines = [x.strip() for x in lines]
+
+        f.close()
+        return lines
+
